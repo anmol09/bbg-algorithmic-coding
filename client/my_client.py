@@ -1,5 +1,9 @@
-import clientpy3 as cl
+import client.clientpy3 as cl
 
 
-def run(* commands):
-	cl.run('comegetme','123waterloo',commands)
+def run(*commands):
+	print(commands)
+
+	print(str(commands))
+	print(type(commands))
+	cl.run('comegetme','123waterloo',str(commands))
